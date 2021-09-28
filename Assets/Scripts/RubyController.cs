@@ -24,4 +24,5 @@ public class RubyController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
     }
+
 }
