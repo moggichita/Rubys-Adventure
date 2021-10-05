@@ -49,7 +49,22 @@ public class EnemyController : MonoBehaviour
         }
 
         rigidbody2D.MovePosition(position);
-    }
+
+        
+        public void Fix()
+        {
+            broken = false;
+            rigidbody2D.simulated = false;
+        }
+
+        void Update()
+        {
+            
+            if (!broken)
+            {
+                return;
+            }
+        }
 
     void OnCollisionEnter2D(Collision2D other)
     {
