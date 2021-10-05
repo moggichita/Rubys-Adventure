@@ -254,7 +254,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cc196dccff9a5254899cd1ff143933c9, type: 2}
+  - {fileID: 2100000, guid: d801e61f42f15ab4198d3f5c8187b6f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3185,7 +3185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734874611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5539, y: 1.2263, z: 0}
+  m_LocalPosition: {x: 0.5539, y: 3.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3589,6 +3589,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1463565119144105326, guid: 8de5e5a71b9fe474088ced0a4875f671, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3053321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463565119144105326, guid: 8de5e5a71b9fe474088ced0a4875f671, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.3776763
+      objectReference: {fileID: 0}
     - target: {fileID: 1875606718429941943, guid: 8de5e5a71b9fe474088ced0a4875f671, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -3707,6 +3715,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2638485496054026560, guid: ac0ab2bb103476c40b87cb134404a113, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 5924616662395881777, guid: 6d6ed6edbefcd3845a0c964592e4b000, type: 3}
     - target: {fileID: 2638485496054026561, guid: ac0ab2bb103476c40b87cb134404a113, type: 3}
       propertyPath: m_Name
       value: ruby
