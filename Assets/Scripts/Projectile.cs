@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rigidbody2d;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
@@ -23,6 +23,8 @@ public class Projectile : MonoBehaviour
         Debug.Log("Projectile Collision with " + other.gameObject);
         Destroy(gameObject);
     }
+
+
 
     // Update is called once per frame
     void Update()
