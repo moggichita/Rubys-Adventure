@@ -6528,6 +6528,7 @@ GameObject:
   - component: {fileID: 1342928650}
   - component: {fileID: 1342928652}
   - component: {fileID: 1342928651}
+  - component: {fileID: 1342928653}
   m_Layer: 5
   m_Name: Helath
   m_TagString: Untagged
@@ -6594,6 +6595,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342928649}
   m_CullTransparentMesh: 1
+--- !u!114 &1342928653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342928649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb1bfc005d78674b881fd396602c3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask: {fileID: 931375654}
 --- !u!1 &1459841154
 GameObject:
   m_ObjectHideFlags: 0
