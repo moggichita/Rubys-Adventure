@@ -20,6 +20,10 @@ public class RubyController : MonoBehaviour
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
+    public AudioClip lanzar;
+    public AudioClip golpe;
+
+    AudioSource audioSource;
 
     Rigidbody2D rigidbody2d;
 
@@ -30,7 +34,10 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -79,6 +86,8 @@ public class RubyController : MonoBehaviour
             isInvincible = true;
             invincibleTimer = timeInvincible;
             animator.SetTrigger("Hit");
+
+            PlaySound(golpe);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -94,6 +103,13 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+
+        PlaySound(lanzar);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
 }
